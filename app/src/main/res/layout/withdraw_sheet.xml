@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_withdraw_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:padding="0sp"
+            android:text="Withdraw money to"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextPrimary"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_withdraw_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/colorDivider"/>
+
+    <Button
+        android:id="@+id/btn_add_bank_wallet_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:drawableLeft="@drawable/ic_add_black"
+        android:text="Add bank beneficiary"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextGray"
+        android:drawablePadding="24sp"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

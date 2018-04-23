@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".SendSecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+        <TextView
+            android:id="@+id/txt_address_label_send_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send BitCoin to"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlueBright"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_address_send_second"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="-4sp"
+                android:text=""
+                android:hint="Send BitCoin to"
+                android:textColorHint="@color/colorTextHintGray"
+                android:textSize="24sp"
+                android:textColor="@color/colorBlack"
+                android:backgroundTint="@color/colorBlueBright" />
+
+            <ImageButton
+                android:id="@+id/btn_remove_address_send_second"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:padding="0sp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:src="@drawable/ic_close_blue"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile number, Bitcoin or email address"
+            android:textColor="@color/colorTextHintGray"/>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/list_send"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:groupIndicator="@null"/>
+
+</LinearLayout>

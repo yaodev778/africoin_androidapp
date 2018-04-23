@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:background="@color/colorPrimary">
+
+            <ImageButton
+                android:id="@+id/btn_menu_home_frg"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginLeft="8sp"
+                android:padding="0sp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:src="@drawable/ic_menu"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48sp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZAR"
+                        android:textSize="36sp"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:text="8,493"
+                        android:textSize="36sp"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~BTC"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:text="0.086317"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:elevation="3sp"
+            android:layout_marginTop="-40sp"
+            android:layout_marginLeft="32sp"
+            android:layout_marginRight="32sp"
+            android:padding="8sp"
+            android:background="@drawable/general_bg_5sp">
+
+            <Button
+                android:id="@+id/btn_send_main"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:drawableTop="@drawable/ic_send"
+                android:text="Send"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_buy_main"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:drawableTop="@drawable/ic_buy"
+                android:text="Buy"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_withdraw_main"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:paddingLeft="0sp"
+                android:paddingRight="0sp"
+                android:layout_weight="1"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:drawableTop="@drawable/ic_withdraw"
+                android:text="Withdraw"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_more_main"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:drawableTop="@drawable/ic_more"
+                android:text="More"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/primary_manu" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_wallets"
+            android:icon="@drawable/ic_menu_wallets"
+            android:title="Wallets" />
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/ic_menu_transactions"
+            android:title="Transactions" />
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/ic_menu_promotions"
+            android:title="Promotions" />
+        <item
+            android:id="@+id/nav_exchange"
+            android:icon="@drawable/ic_menu_exchange"
+            android:title="Exchange" />
+    </group>
+
+    <group android:id="@+id/secondary_menu" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_menu_help"
+            android:title="Help Centre" />
+
+    </group>
+
+</menu>

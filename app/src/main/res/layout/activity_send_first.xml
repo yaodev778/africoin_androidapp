@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".SendFirstActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_bitcoin_sendfirst"
+        android:layout_width="match_parent"
+        android:layout_height="76sp"
+        android:padding="8sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8sp"
+            android:src="@drawable/bitcoin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_gravity="center_vertical"
+            android:text="Bitcoin"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ethereum_sendfirst"
+        android:layout_width="match_parent"
+        android:layout_height="76sp"
+        android:padding="8sp">
+
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8sp"
+            android:src="@drawable/ethereum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_gravity="center_vertical"
+            android:text="Ethereum"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
